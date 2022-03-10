@@ -61,6 +61,8 @@ const createPost = (post) => {
     const userImage = post.userImage
     const div = document.createElement( "article" );
     div.classList.add( "post" );
+    div.classList.add("p-3");
+    div.classList.add("rounded");
     div.innerHTML = `
               <div class="post__header">
                 <div class="post__profile">
