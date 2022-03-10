@@ -77,7 +77,7 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
-        <section class="text my-5 container border-3">
+        <section id="text" class="text my-5 container border-3">
             <h2 class="mb-5 text-center">Questions and Answer</h2>
             <h4>1. How does javascript work?</h4>
             <p class="mb-4">
@@ -88,12 +88,16 @@
             </p>
             <h4>2. What is the different between Local storage and Session storage?</h4>
             <p class="mb-4">
-                <span class="fw-bold">Answer: </span> 
+                <span class="fw-bold">Answer: </span> Session storage and local storage is almost same. But there are few differences between session storage and local storage. Those are described as below. <br><br>
+                Session storage expire when the page reload/close. For example: if a user mute a video sound of a particular website. But after reloading the page, the previously muted video become unmuted. This  kind data was kept in session storage. One the other hand, Local storage can keep the data for long period of time. For example: User shopping card. which can store selected product and won't be removed or expired until the user remove it or buy the product. <br> <br>
+                For a particular website, if different pages are open in a browser, URL creates different session storage for different pages. On the other hand, local storage will be same for different pages.
+                The session storage only can service until the window or tab is open. But the Local storage will survive until anyone clean the local storage. <br><br>
+                Session storage is more secure as session storage store data for short period of time. but the local keep data which in unsecure comparing the session storage.
+                
             </p>
 
         </section>
-        <footer class="text-center">
-            &copy;Hasan Mohammad
+        <footer class="text-center my-3">
         </footer>
 
         <!-- add javascript  file  -->
